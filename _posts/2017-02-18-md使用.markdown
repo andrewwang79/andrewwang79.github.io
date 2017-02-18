@@ -24,10 +24,7 @@ categories: 软件
 ## md本地编辑器
 [typora](https://typora.io/)
 [windows markdownpad](http://www.markdownpad.com/)
-
-[](http://macdown.uranusjr.com/)
-
-
+[macdown](http://macdown.uranusjr.com/)
 
 ## other
 [Sublime text 2/3 中 Package Control 的安装与使用方法](http://blog.csdn.net/mkosto/article/details/52979953)
