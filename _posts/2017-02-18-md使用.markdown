@@ -5,6 +5,8 @@ date:   2017-02-18 09:20:48 +0800
 categories: 软件
 ---
 
+[TOC]
+
 # 步骤
 ## 文件分享
 1. 注册github账号
@@ -15,5 +17,17 @@ categories: 软件
 见“Jekyll和Github搭建个人静态博客”
 
 # 资料
+## md
 [Github的md语法](https://guides.github.com/features/mastering-markdown/)
 [Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
+
+## md本地编辑器
+[typora](https://typora.io/)
+[windows markdownpad](http://www.markdownpad.com/)
+
+[](http://macdown.uranusjr.com/)
+
+
+
+## other
+[Sublime text 2/3 中 Package Control 的安装与使用方法](http://blog.csdn.net/mkosto/article/details/52979953)
