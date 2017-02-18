@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "md使用"
+date:   2017-02-18 09:20:48 +0800
+categories: 软件
+---
+
+# 步骤
+## 文件分享
+1. 注册github账号
+2. 创建项目的Github Pages
+3. 通过git客户端提交文件
+
+## 网站
+见“Jekyll和Github搭建个人静态博客”
+
+# 资料
+[Github的md语法](https://guides.github.com/features/mastering-markdown/)
+[Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
