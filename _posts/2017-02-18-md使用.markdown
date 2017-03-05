@@ -19,12 +19,20 @@ categories: 软件
 # 资料
 ## md
 [Github的md语法](https://guides.github.com/features/mastering-markdown/)
+
 [Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
 
 ## md本地编辑器
 [typora](https://typora.io/)
+
 [windows markdownpad](http://www.markdownpad.com/)
+
 [macdown](http://macdown.uranusjr.com/)
 
 ## other
 [Sublime text 2/3 中 Package Control 的安装与使用方法](http://blog.csdn.net/mkosto/article/details/52979953)
+
+# gitbook
+[Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
+
+通过clone来多人编辑
