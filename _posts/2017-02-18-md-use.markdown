@@ -2,10 +2,12 @@
 layout: post
 title:  "md使用"
 date:   2017-02-18 09:20:48 +0800
-categories: 软件
+categories: software
+catalog: true
+tags:
+    - md
+    - Jekyll
 ---
-
-[TOC]
 
 # 步骤
 ## 文件分享
