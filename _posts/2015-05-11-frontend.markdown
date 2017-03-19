@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "前端开发"
+date:   2015-05-11
+catalog: true
+tags:
+    - 技术
+    - 前端
+---
+
+# 第三方库
+- requirejs：AMD，需求加载
+- backbone：MVC
+- [初探Backbone](http://www.cnblogs.com/yexiaochai/p/3219402.html)
+-handlebars：模板
+- lodash：基础库，underscore替代品。[函数说明](https://lodash.com/docs)
+
+# js技术
+- 异步原理：[异步JavaScript与Promise](https://segmentfault.com/a/1190000002526897)
+- 异步jquery实现：[jQuery的deferred对象详解](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)

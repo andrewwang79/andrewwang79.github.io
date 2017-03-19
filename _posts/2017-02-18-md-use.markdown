@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "markdown使用"
-date:   2017-02-18 09:20:48 +0800
-categories: software
+date:   2017-02-18
 catalog: true
 tags:
-    - md
+    - markdown
     - Jekyll
+    - gitbook
 ---
 
 # 用途
@@ -23,32 +23,28 @@ tags:
 # markdown
 
 ## 资料
-[Github的md语法](https://guides.github.com/features/mastering-markdown/)
-[Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
-[使用 github + jekyll 搭建个人博客](http://www.cnblogs.com/wangfupeng1988/p/5702324.html)
+- [Github的md语法](https://guides.github.com/features/mastering-markdown/)
+- [Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
+- [使用 github + jekyll 搭建个人博客](http://www.cnblogs.com/wangfupeng1988/p/5702324.html)
+
 ## 本地编辑器
-[typora](https://typora.io/)：推荐
-[windows markdownpad](http://www.markdownpad.com/)
-[macdown](http://macdown.uranusjr.com/)
+- [typora](https://typora.io/)：推荐
+- [windows markdownpad](http://www.markdownpad.com/)
+- [macdown](http://macdown.uranusjr.com/)
 
 # jekyll
 
 ## 命令
-
-创建网站目录：jekyll new dir
-启动网站：cd dir; jekyll serve --watch
+- 创建网站目录：jekyll new dir
+- 启动网站：cd dir; jekyll serve --watch
 
 ## 本地网站
-
 [http://localhost:4000/](http://localhost:4000/)
 
 ## 模板
-
-[https://www.zhihu.com/question/20223939](https://www.zhihu.com/question/20223939)
-
-[https://github.com/jekyll/jekyll/wiki/Sites](https://github.com/jekyll/jekyll/wiki/Sites)
-
-[https://jekyllthemes.io/](https://jekyllthemes.io/)
+- [https://www.zhihu.com/question/20223939](https://www.zhihu.com/question/20223939)
+- [https://github.com/jekyll/jekyll/wiki/Sites](https://github.com/jekyll/jekyll/wiki/Sites)
+- [https://jekyllthemes.io/](https://jekyllthemes.io/)
 
 
 

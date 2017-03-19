@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "产品设计"
+date:   2015-05-11
+catalog: true
+tags:
+    - 技术
+    - 产品
+    - 产品经理
+---
+
+# 概念
+- [产品经理（PM）一秒理解MRD、PRD、BRD](http://www.coolseo.org/operation/pm-mrd-prd-brd)
+- [BRD、MRD 和 PRD 之间的区别与联系有哪些？](https://www.zhihu.com/question/19655491)
+
+# 产品经理
+- [产品经理需要具备的6大特质](http://www.yixieshi.com/zhichang/16405.html)
+- [产品经理的主要责任——产品价值管理](http://www.heguangming.com/?p=898)
+- [产品规划七宗罪](http://www.heguangming.com/?p=833)
+
+# 产品开发
+- [马化腾教你如何做产品：让产品自己召唤人](https://www.axure.com.cn/901/)
+- [阿里旺旺产品项目UED流程图](http://www.heguangming.com/wp-content/uploads/2012/08/%E9%98%BF%E9%87%8C%E6%97%BA%E6%97%BA%E4%BA%A7%E5%93%81%E9%A1%B9%E7%9B%AEUED%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
+- [张小龙：APP产品经理必须要懂的30条原则](http://www.yixieshi.com/17656.html)
+
+# 工具
+- [Axure RP 7.0快捷键 汇总](http://www.woshipm.com/pd/81482.html)
+- axure库：[axure](http://www.axure.com/community/widget-libraries)，[axureland](http://axureland.com/axure-widget-libraries)
