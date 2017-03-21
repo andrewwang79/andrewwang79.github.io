@@ -16,7 +16,7 @@ tags:
 | -------- | ----- | ----- | ----- | ---- |----- | ----- | ---- |
 | master | 主干，正式环境 | Y | master | release，hotfix | 无 | 无 | 发布人员 |
 | develop  | 开发分支，开发环境，测试环境 | Y |  dev | 无 | 任意 | 无 | 开发人员 |
-| feature | 功能分支 | N |  V2.3_ft_代付_lyx。V版本号__ft_功能说明_负责人 | dev | 任意 | dev | 开发人员 |
+| feature | 功能分支 | N |  V2.3_ft_pay_lyx。V版本号__ft_功能说明_负责人 | dev | 任意 | dev | 开发人员 |
 | release | 版本发布分支 | N | V2.3_rl_20161111。V版本号__rl_版本日期 | dev | bugfix | dev | 发布人员，开发人员 |
 | hotfix | 补丁分支 | N | V2.2_hf_123456-332452_wyq。V版本号__hf_bug说明_负责人 | master | bugfix | dev | 发布人员，开发人员 |
 
@@ -45,19 +45,19 @@ tags:
 1. 从master克隆dev：git checkout master; git branch dev;
 
 #### 开发feature分支
-1. 从dev克隆feature：git checkout dev; git branch V2.3_ft_代付_lyx;
-1. 开发
-1. feature合并回dev：
+1. 从dev克隆feature：git checkout dev; git branch V2.3_ft_pay_lyx;
+1. 开发：git checkout V2.3_ft_pay_lyx;
+1. feature合并回dev：git checkout dev; git merge V2.3_ft_pay_lyx;
 
 #### 开发release分支
 1. 从dev克隆release：git checkout dev; git branch V2.3_rl_20161111;
-1. 开发
+1. 开发：git checkout V2.3_rl_20161111;
 1. release合并回dev：
 1. release合并到master：
 
 #### 开发hotfix分支
 1. 从master克隆hotfix：git checkout master; git branch V2.2_hf_123456-332452_wyq;
-1. 开发
+1. 开发：git checkout V2.2_hf_123456-332452_wyq;
 1. hotfix合并回master：
 1. release合并到dev/release：
 
@@ -68,16 +68,19 @@ tags:
 ## 命令
 - **指定在特定目录执行git：git -C <目录>**
 - 显示当前分支：git branch
+- 新建分支：git branch <远程分支>
 - 切换分支：git checkout <远程分支>，git checkout master
 - 拉取当前分支：git pull
 - 拉取分支：git pull <远程主机> <远程分支>:<本地分支>，git pull origin master:master。
-- 合并分支
+- 合并分支(远程分支合并到当前分支)：git merge <远程分支>
+- 删除分支：git branch -d <远程分支>
 - 基于当前分支创建新分支：git branch <本地新分支>
 - 显示分支的提交记录：git show-branch
 - 显示所有分支：git branch -va
 
 # 资料
-1. [git push & git pull 推送/拉取分支](http://blog.csdn.net/litianze99/article/details/52452521)
+1. **[git push & git pull 推送/拉取分支](http://blog.csdn.net/litianze99/article/details/52452521)**
+1. **[Git - 分支的新建与合并](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)**
 1. [使用流程和方法](https://www.zybuluo.com/lyxiang/note/605932)
 1. [git – 简易指南](http://www.bootcss.com/p/git-guide/)
 1. 测试git的环境：https://git.coding.net/andrewwang79/train.git
