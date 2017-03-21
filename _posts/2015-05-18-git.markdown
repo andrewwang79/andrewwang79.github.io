@@ -10,31 +10,74 @@ tags:
 
 # 版本模型
 资料：[分支模型](http://blog.csdn.net/qq_34651940/article/details/51891767)，[英文原版](http://nvie.com/posts/a-successful-git-branching-model/)
+![](http://img.blog.csdn.net/20160716144249144?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
 |分支类型 | 名称 | 永久 | 命名规范 | 来源 | 操作 | 合并到 | 角色 |
 | -------- | ----- | ----- | ----- | ---- |----- | ----- | ---- |
 | master | 主干，正式环境 | Y | master | release，hotfix | 无 | 无 | 发布人员 |
-| develop  | 开发分支，开发环境 | Y |  dev | 无 | 任意 | 无 | 开发人员 |
+| develop  | 开发分支，开发环境，测试环境 | Y |  dev | 无 | 任意 | 无 | 开发人员 |
 | feature | 功能分支 | N |  V2.3_ft_代付_lyx。V版本号__ft_功能说明_负责人 | dev | 任意 | dev | 开发人员 |
 | release | 版本发布分支 | N | V2.3_rl_20161111。V版本号__rl_版本日期 | dev | bugfix | dev | 发布人员，开发人员 |
 | hotfix | 补丁分支 | N | V2.2_hf_123456-332452_wyq。V版本号__hf_bug说明_负责人 | master | bugfix | dev | 发布人员，开发人员 |
 
-注意事项
+注意事项：
 1. master上的每次提交都是一个发布版本。同时需要打标签。
-1. hotfix时，当有一个release分支同时存在时，这个hotfix分支必须被合并到release分支而不是dev分支(release会合并到dev)。
-1. 模型精简方法：当前版本的feature无需另开分支，直接在dev开发。长期feature需开分支。
+1. hotfix时，当有一个release分支同时存在（当前版本快发布了，却发现上个版本的bug）。这个hotfix分支必须被合并到release分支而不是dev分支(release后续会合并到dev)。
 
-# 部署环境
 
-| 环境 | 对应分支 | 说明 |
+精简模型的操作：
+1. hotfix无需另开分支，直接在master开发【否则还需部署一套环境】。合并操作同hotfix。
+1. 当前版本的feature无需另开分支，直接在dev开发。长期feature需开分支。
+
+# 环境清单
+每个环境都有一套：执行程序，数据库，配置
+
+| 环境 | 对应分支 | 执行程序 | 数据库 | 设置 | 说明 |
 | :----: | ---- | ---- |
-| 开发环境 | dev+feature | 开发人员自行搭建，可复用测试环境数据库 |
-| 测试环境 | dev |  |
-| 发布环境 | release或者hotfix | 可复用测试环境数据库 |
-| 正式环境 | master | 独立数据库 |
+| 开发环境 | dev+feature | 开发人员自行搭建，独立 | 可复用测试数据库 | 可复用测试配置 |
+| 测试环境 | dev | 独立 | 独立 | 独立 |
+| 发布环境 | release或者hotfix | 独立 | 可复用测试数据库 | 独立 |
+| 正式环境 | master | 独立 | 独立 | 独立 |
+
+# 操作命令
+## 操作
+#### 初始化
+1. 从master克隆dev：git checkout master; git branch dev;
+
+#### 开发feature分支
+1. 从dev克隆feature：git checkout dev; git branch V2.3_ft_代付_lyx;
+1. 开发
+1. feature合并回dev：
+
+#### 开发release分支
+1. 从dev克隆release：git checkout dev; git branch V2.3_rl_20161111;
+1. 开发
+1. release合并回dev：
+1. release合并到master：
+
+#### 开发hotfix分支
+1. 从master克隆hotfix：git checkout master; git branch V2.2_hf_123456-332452_wyq;
+1. 开发
+1. hotfix合并回master：
+1. release合并到dev/release：
+
+#### 部署环境
+1. 获取代码(测试环境)：git -C DIR checkout dev; git -C DIR pull;
+1. 部署
+
+## 命令
+- **指定在特定目录执行git：git -C <目录>**
+- 显示当前分支：git branch
+- 切换分支：git checkout <远程分支>，git checkout master
+- 拉取当前分支：git pull
+- 拉取分支：git pull <远程主机> <远程分支>:<本地分支>，git pull origin master:master。
+- 合并分支
+- 基于当前分支创建新分支：git branch <本地新分支>
+- 显示分支的提交记录：git show-branch
+- 显示所有分支：git branch -va
 
 # 资料
-[Git 常用命令整理](http://justcoding.iteye.com/blog/1830388)
-[使用](https://www.zybuluo.com/lyxiang/note/605932)
-[git – 简易指南](http://www.bootcss.com/p/git-guide/)
-测试git的环境：https://git.coding.net/andrewwang79/train.git
+1. [git push & git pull 推送/拉取分支](http://blog.csdn.net/litianze99/article/details/52452521)
+1. [使用流程和方法](https://www.zybuluo.com/lyxiang/note/605932)
+1. [git – 简易指南](http://www.bootcss.com/p/git-guide/)
+1. 测试git的环境：https://git.coding.net/andrewwang79/train.git

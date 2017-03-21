@@ -92,5 +92,9 @@ friends: [
     {
         title: "前端",
         href: "http://k.swao.cn/js/"
+    },
+    {
+        title: "王子子",
+        href: "https://heavysheep.github.io/"
     }
 ]

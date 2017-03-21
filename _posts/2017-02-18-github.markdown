@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "github的玩法"
+date:   2017-02-18
+catalog: true
+tags:
+    - github
+    - Jekyll
+    - gitbook
+---
+
+# 用途
+## 文件分享
+1. 注册github账号
+2. 创建项目的Github Pages
+3. 通过git客户端提交文件
+
+## 个人网站
+- [Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
+- [使用 github + jekyll 搭建个人博客](http://www.cnblogs.com/wangfupeng1988/p/5702324.html)
+
+# jekyll
+
+## 命令
+- 创建网站目录：jekyll new dir
+- 启动网站：cd dir; jekyll serve --watch
+
+## 本地网站
+[http://localhost:4000/](http://localhost:4000/)
+
+## 模板
+- [https://www.zhihu.com/question/20223939](https://www.zhihu.com/question/20223939)
+- [https://github.com/jekyll/jekyll/wiki/Sites](https://github.com/jekyll/jekyll/wiki/Sites)
+- [https://jekyllthemes.io/](https://jekyllthemes.io/)
+
+
+# gitbook
+
+[Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
+
+通过clone来多人编辑
