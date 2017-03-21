@@ -41,27 +41,27 @@ tags:
 
 # 操作命令
 ## 操作
-#### 初始化
+### 初始化
 1. 从master克隆dev：git checkout master; git branch dev;
 
-#### 开发feature分支
+### 开发feature分支
 1. 从dev克隆feature：git checkout dev; git branch V2.3_ft_pay_lyx;
 1. 开发：git checkout V2.3_ft_pay_lyx;
 1. feature合并回dev：git checkout dev; git merge V2.3_ft_pay_lyx;
 
-#### 开发release分支
+### 开发release分支
 1. 从dev克隆release：git checkout dev; git branch V2.3_rl_20161111;
 1. 开发：git checkout V2.3_rl_20161111;
 1. release合并回dev：
 1. release合并到master：
 
-#### 开发hotfix分支
+### 开发hotfix分支
 1. 从master克隆hotfix：git checkout master; git branch V2.2_hf_123456-332452_wyq;
 1. 开发：git checkout V2.2_hf_123456-332452_wyq;
 1. hotfix合并回master：
 1. release合并到dev/release：
 
-#### 部署环境
+### 部署环境
 1. 获取代码(测试环境)：git -C DIR checkout dev; git -C DIR pull;
 1. 部署
 

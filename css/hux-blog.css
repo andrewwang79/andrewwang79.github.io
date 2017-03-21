@@ -113,22 +113,22 @@
   font-size: 12px;
 }
 .side-catalog .catalog-body .h1_nav{
-  margin-left: 7px;
+  margin-left: 5px;
 }
 .side-catalog .catalog-body .h2_nav{
-  margin-left: 14px;
+  margin-left: 15px;
 }
 .side-catalog .catalog-body .h3_nav{
-  margin-left: 21px;
+  margin-left: 25px;
 }
 .side-catalog .catalog-body .h4_nav{
-  margin-left: 28px;
-}
-.side-catalog .catalog-body .h5_nav{
   margin-left: 35px;
 }
+.side-catalog .catalog-body .h5_nav{
+  margin-left: 43px;
+}
 .side-catalog .catalog-body .h6_nav{
-  margin-left: 42px;
+  margin-left: 51px;
 }
 .side-catalog .catalog-body .h4_nav a,
 .side-catalog .catalog-body .h5_nav a,
