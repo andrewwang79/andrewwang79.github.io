@@ -19,6 +19,9 @@ tags:
 - [Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
 - [使用 github + jekyll 搭建个人博客](http://www.cnblogs.com/wangfupeng1988/p/5702324.html)
 
+## 多人协作
+通过clone来多人编辑gitbook
+
 # jekyll
 
 ## 命令
@@ -35,7 +38,11 @@ tags:
 
 
 # gitbook
+1. 去https://www.gitbook.com注册，管理github账号，创建book
+1. 下载book。熟手不建议用gitbookEditor。
+  1. 用git管理工具(SourceTree)下载到本地。如是github授权注册的，需在gitbook网站上初始化密码。
+  1. 用"gitbookEditor"导入book到本地
+1. 编写SUMMARY.md，通过“gitbook init”自动生成所有目录和文件
 
-[Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
-
-通过clone来多人编辑
+- [Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
+- [如何用gitbook写书](http://blog.csdn.net/maray/article/details/50067821)

@@ -8,13 +8,77 @@ tags:
     - 前端
 ---
 
-# 第三方库
+# think
+- nodejs是趋势
+
+# js
+## 工具
+- [手机前端开发调试利器vConsole](https://www.oschina.net/p/vconsole)
+
+## 技术
+- 异步原理：[异步JavaScript与Promise](https://segmentfault.com/a/1190000002526897)
+- 异步jquery实现：[jQuery的deferred对象详解](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
+- [大白话讲解Promise（一）](http://www.cnblogs.com/lvdabao/p/es6-promise-1.html)
+- [ECMAScript 2015](https://babeljs.io/learn-es2015/)
+
+## 第三方库概览
 - requirejs：AMD，需求加载
 - backbone：MVC
 - [初探Backbone](http://www.cnblogs.com/yexiaochai/p/3219402.html)
--handlebars：模板
+- handlebars：模板
 - lodash：基础库，underscore替代品。[函数说明](https://lodash.com/docs)
 
-# js技术
-- 异步原理：[异步JavaScript与Promise](https://segmentfault.com/a/1190000002526897)
-- 异步jquery实现：[jQuery的deferred对象详解](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
+## UI
+- https://vux.li
+- http://qmuiteam.com
+- https://museui.github.io
+
+## 组件
+- [H5播放器](https://plyr.io)
+
+## 资料
+- [润晴的资料](https://www.zybuluo.com/tianqing123/note/617137)
+https://www.awesomes.cn/
+
+# vue
+## 资料
+- [element组件库](http://element.eleme.io/)
+- [vuejs和element搭建的一个后台管理界面](http://www.cnblogs.com/taylorchen/p/6083099.html)
+- https://www.awesomes.cn/subject/vue
+- [vue资料](https://github.com/vuejs/awesome-vue)
+
+## 进阶
+- [列表过渡](https://cn.vuejs.org/v2/guide/transitions.html#列表过渡)
+- [mixins](https://cn.vuejs.org/v2/guide/mixins.html)
+- [plugins](https://cn.vuejs.org/v2/guide/plugins.html)：和组件啥区别？
+
+## other
+- [Vue 动态添加模板的几种方法](http://www.tuicool.com/articles/MJRbum3)
+- [vue2.0动态添加组件](https://segmentfault.com/q/1010000007157395)
+
+# webpack
+- [Webpack的代码拆分](https://webpack.github.io/docs/code-splitting.html)： 避免强制用户下载整个单页面应用
+
+# AngularJS2(已废弃)
+## 架构理解
+- 扩展语法编写HTML模板
+- 组件管理这些模板
+- 服务添加应用逻辑
+- 模块打包发布组件与服务
+
+## 第三方库
+### ng-bootstrap
+- [官网](https://ng-bootstrap.github.io/)
+- [安装步骤](https://github.com/ng-bootstrap/ng-bootstrap)。安装bootstrap，index.html加载其css。其他见安装说明。
+### ng-lightning(已废弃)
+[官网](http://ng-lightning.github.io/ng-lightning/)
+
+## 参考资料
+- [快速起步](https://www.angular.cn/docs/ts/latest/quickstart.html)
+- [架构概览](https://www.angular.cn/docs/ts/latest/guide/architecture.html)
+- [组件通讯](https://www.angular.cn/docs/ts/latest/cookbook/component-communication.html#!#bidirectional-service)
+- [Angular小抄](https://www.angular.cn/docs/ts/latest/guide/cheatsheet.html)
+- [依赖注入](https://www.angular.cn/docs/ts/latest/cookbook/dependency-injection.html)
+- [Angular2项目日常开发中所遇问题及解决方案记录系列](http://community.angular.cn/A2G1)
+
+# TypeScript
