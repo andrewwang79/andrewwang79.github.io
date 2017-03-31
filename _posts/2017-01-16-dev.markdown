@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "开发人员的知识"
+date:   2017-01-16
+catalog: true
+tags:
+    - 开发
+---
+
+
+# 重点
+* 工作方法论：面向对象
+* 解决问题的方法
+* 产品质量性能
+* 技术
+
+# 知识点
+## 方法论
+1. 好习惯和规范
+  * 3年工作有1年经验 vs 1年工作有3年经验
+1. 问题思考方式和工作方法论
+  * [买土豆](http://wenku.baidu.com/link?url=GROCStmuDYNMqIlqw56-OtGPWoG_V7WWLG9scVPy50gimOQIaF5B7MJ96-3wfLoVdNQkAvbJRVPyp42cUGxdivKasajK9V-OKPEsn7unp_S)
+  * [二八定律](http://baike.baidu.com/item/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B)
+  * [Linux中的几个思想](http://www.mamicode.com/info-detail-1471131.html)
+1. [your potential,our passion](http://blog.sina.com.cn/s/blog_47629b0b0100hf52.html)  你的潜力，我们的动力。用我们无限的激情激发你潜在的能力
+1. aggressive AND defensive
+
+## 文档
+* 文档内容：复杂业务，长期记录的业务
+* 文档目的：记录复杂业务，降低沟通成本。
+* 表格的使用场景：两个维度业务的说明
+* 注意事项
+  1. 要有目录结构
+  1. 一个内容只能在一个文档，不要复制粘贴
+  1. 基于需求精简文档
+* 编写
+  * 文档，不是文章
+  * [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown)
+  * 文本信息在线存放渠道推荐：github page。如文章，代码，原型html等。也可以存放二进制文件(不能预览)
+
+
+## [项目管理](/2017/01/01/project-manage/)
+
+## [测试](TODO)
+* [单元测试](https://www.zybuluo.com/lyxiang/note/595671)
+* [网页测试](https://www.zybuluo.com/qihuan/note/595743)
+
+## [版本开发管理-git](https://andrewwang79.github.io/2015/05/18/git/)
