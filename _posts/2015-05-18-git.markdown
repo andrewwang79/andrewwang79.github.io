@@ -20,11 +20,6 @@ tags:
 | release | 版本发布分支 | N | V2.3_rl_20161111。V版本号__rl_版本日期 | dev | bugfix | dev | 发布人员，开发人员 |
 | hotfix | 补丁分支 | N | V2.2_hf_123456-332452_wyq。V版本号__hf_bug说明_负责人 | master | bugfix | dev | 发布人员，开发人员 |
 
-注意事项：
-1. master上的每次提交都是一个发布版本。同时需要打标签。
-1. hotfix时，当有一个release分支同时存在（当前版本快发布了，却发现上个版本的bug）。这个hotfix分支必须被合并到release分支而不是dev分支(release后续会合并到dev)。
-
-
 精简模型的操作：
 1. hotfix无需另开分支，直接在master开发【否则还需部署一套环境】。合并操作同hotfix。
 1. 当前版本的feature无需另开分支，直接在dev开发。长期feature需开分支。
@@ -46,20 +41,22 @@ tags:
 
 ### 开发feature分支
 1. 从dev克隆feature：git checkout dev; git branch V2.3_ft_pay_lyx;
-1. 开发：git checkout V2.3_ft_pay_lyx;
+1. 开发人员检出：git checkout V2.3_ft_pay_lyx;
 1. feature合并回dev：git checkout dev; git merge V2.3_ft_pay_lyx;
 
 ### 开发release分支
 1. 从dev克隆release：git checkout dev; git branch V2.3_rl_20161111;
-1. 开发：git checkout V2.3_rl_20161111;
+1. 开发人员检出：git checkout V2.3_rl_20161111;
 1. release合并回dev：
-1. release合并到master：
+1. release合并到master（是一个发布版本。同时需要打标签）：
 
 ### 开发hotfix分支
 1. 从master克隆hotfix：git checkout master; git branch V2.2_hf_123456-332452_wyq;
-1. 开发：git checkout V2.2_hf_123456-332452_wyq;
+1. 开发人员检出：git checkout V2.2_hf_123456-332452_wyq;
 1. hotfix合并回master：
 1. release合并到dev/release：
+
+> hotfix时，当有一个release分支同时存在（当前版本快发布了，却发现上个版本的bug）。这个hotfix分支必须被合并到release分支而不是dev分支(release后续会合并到dev)。
 
 ### 部署环境
 1. 获取代码(测试环境)：git -C DIR checkout dev; git -C DIR pull;

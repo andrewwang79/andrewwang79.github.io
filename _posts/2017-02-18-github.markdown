@@ -45,4 +45,5 @@ tags:
 1. 编写SUMMARY.md，通过“gitbook init”自动生成所有目录和文件
 
 - [Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
+- **[GitBook使用教程](http://gitbook.zhangjikai.com/)**
 - [如何用gitbook写书](http://blog.csdn.net/maray/article/details/50067821)
