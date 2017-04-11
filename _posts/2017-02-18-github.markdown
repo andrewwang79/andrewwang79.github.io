@@ -38,12 +38,19 @@ tags:
 
 
 # gitbook
+## 使用
 1. 去https://www.gitbook.com注册，管理github账号，创建book
 1. 下载book。熟手不建议用gitbookEditor。
   1. 用git管理工具(SourceTree)下载到本地。如是github授权注册的，需在gitbook网站上初始化密码。
   1. 用"gitbookEditor"导入book到本地
 1. 编写SUMMARY.md，通过“gitbook init”自动生成所有目录和文件
 
+## 命令
+- 运行(监听和运行端口是可选项)：gitbook serve --lrport 35729 --port 4000
+- 自动生成所有目录和文件：gitbook init
+- 安装插件：gitbook install
+
+## 资料
 - [Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
 - **[GitBook使用教程](http://gitbook.zhangjikai.com/)**
 - [如何用gitbook写书](http://blog.csdn.net/maray/article/details/50067821)
