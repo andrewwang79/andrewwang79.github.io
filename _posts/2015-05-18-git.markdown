@@ -54,7 +54,7 @@ tags:
 1. 从master克隆hotfix：git checkout master; git branch V2.2_hf_123456-332452_wyq;
 1. 开发人员检出：git checkout V2.2_hf_123456-332452_wyq;
 1. hotfix合并回master：
-1. release合并到dev/release：
+1. hotfix合并到dev/release：
 
 > hotfix时，当有一个release分支同时存在（当前版本快发布了，却发现上个版本的bug）。这个hotfix分支必须被合并到release分支而不是dev分支(release后续会合并到dev)。
 
