@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "开发技术"
+date:   2017-06-10
+catalog: true
+tags:
+    - 开发
+---
+
+# 介绍
+## 目标
+1. 提升开发效率
+1. 降低质量风险
+1. 快速定位和解决问题
+1. 降低运营成本
+
+## 方法
+1. 模块化搭建
+1. 分布式架构
+1. 运营系统配置化
+1. 自动化管理
+
+## 使用
+1. Java
+1. Javascript
+
+# 工具方案
+## 开发和管理
+1. [代码管理服务](https://coding.net){:target="_blank"}
+1. [版本发布模型](http://www.wangyaqi.cn/2015/05/18/git/){:target="_blank"}
+1. [API文档](http://eastapi.swao.cn/swagger-ui.html){:target="_blank"}
+1. 可配置的运营系统：[运营系统](http://eastboss.swao.cn/pageui/search.html){:target="_blank"}(lyx/123456)，[客户使用的系统](http://eastp.swao.cn/){:target="_blank"}（18321035379/123456)
+1. [maven仓库](http://mvn.swao.cn/nexus/){:target="_blank"}
+
+## 运维
+1. [错误日志查看](http://123.56.113.222:8080/){:target="_blank"}
+1. [性能分析](http://teast.swao.cn/apiTime.html){:target="_blank"}
+1. 监控：系统监控，业务监控
+
+# 资料书籍
+## 方案
+1. [解决方案集合](https://andrewwang79.gitbooks.io/solution/){:target="_blank"}
+1. [Java开发](https://andrewwang79.gitbooks.io/javadev/){:target="_blank"}
+1. [前端](https://ccc3.gitbooks.io/fe_in_action/){:target="_blank"}
+1. [运维](https://andrewwang79.gitbooks.io/ops/){:target="_blank"}
+
+## 框架
+1. [Java框架：琅琊](https://andrewwang79.gitbooks.io/langya/){:target="_blank"}
+1. [跨终端客户端框架：天山](https://andrewwang79.gitbooks.io/tianshan/){:target="_blank"}
+
+## 业务
+1. [电商](https://andrewwang79.gitbooks.io/mall/){:target="_blank"}
+1. [终端大屏](https://andrewwang79.gitbooks.io/langya/biz/terminal/design.html){:target="_blank"}
+1. 自动化通用抓爬
+
+# 推荐
+[精益阅读](http://sj.qq.com/myapp/detail.htm?apkName=com.qiya.daydayup){:target="_blank"}
