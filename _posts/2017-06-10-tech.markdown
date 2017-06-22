@@ -20,11 +20,11 @@ tags:
 1. 运营系统配置化
 1. 自动化管理
 
-## 使用
+# 工具方案
+## 开发语言
 1. Java
 1. Javascript
 
-# 工具方案
 ## 开发和管理
 1. [代码管理服务](https://coding.net){:target="_blank"}
 1. [版本发布模型](http://www.wangyaqi.cn/2015/05/18/git/){:target="_blank"}
