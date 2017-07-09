@@ -95,6 +95,7 @@ tags:
 - 基于当前分支创建新分支：git branch <本地新分支>
 - 显示分支的提交记录：git show-branch
 - 显示所有分支：git branch -va
+- 重置当前分支到最新提交：cd <目录> | git reset --hard HEAD^
 
 # 资料
 1. **[git push & git pull 推送/拉取分支](http://blog.csdn.net/litianze99/article/details/52452521)**
