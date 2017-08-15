@@ -4,7 +4,7 @@ title:  "开发人员的知识"
 date:   2017-01-16
 catalog: true
 tags:
-    - 开发
+    - 技术
 ---
 
 
@@ -17,9 +17,13 @@ tags:
 # 知识点
 
 ## 开发
-编码风险评估
-代码提交：次数控制，大调整(红色)控制
-code review：每周每人找其他人审核自己的代码
+* 想好再做，编码风险评估
+* 风险管控，业务代码各自确保（特别是对象和数组非空检查）
+* 重要流程：log覆盖，做参数错误检查
+* 关联数据的处理，特别是上下级关系的数据
+* 数据重复检查一定要lock
+* 代码提交：次数控制，大调整(红色)控制
+* code review：每周每人找其他人审核自己的代码
 
 ## 方法论
 1. 好习惯和规范
@@ -32,8 +36,9 @@ code review：每周每人找其他人审核自己的代码
 1. aggressive AND defensive
 
 ## 文档
+* 文档目的：记录复杂业务，降低沟通成本
 * 文档内容：复杂业务，长期记录的业务
-* 文档目的：记录复杂业务，降低沟通成本。
+* 文档形式：方案，流程，伪码
 * 表格的使用场景：两个维度业务的说明
 * 注意事项
   1. 要有目录结构
@@ -44,11 +49,8 @@ code review：每周每人找其他人审核自己的代码
   * [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown)
   * 文本信息在线存放渠道推荐：github page。如文章，代码，原型html等。也可以存放二进制文件(不能预览)
 
-
-## [项目管理](/2017/01/01/project-manage/)
-
 ## [测试](TODO)
 * [单元测试](https://www.zybuluo.com/lyxiang/note/595671)
 * [网页测试](https://www.zybuluo.com/qihuan/note/595743)
 
-## [版本开发管理-git](https://andrewwang79.github.io/2015/05/18/git/)
+## [版本开发管理-git](/2015/05/18/git/)

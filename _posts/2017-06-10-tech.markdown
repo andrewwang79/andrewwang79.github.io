@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "开发技术"
+title:  "开发技术和方案整理"
 date:   2017-06-10
 catalog: true
 tags:
-    - 开发
+    - 技术
 ---
 
 # 介绍
@@ -26,9 +26,10 @@ tags:
 1. Javascript
 
 ## 开发和管理
+1. [产品开发管理](/2017/01/01/prod-manager/){:target="_blank"}
 1. [代码管理服务](https://coding.net){:target="_blank"}
-1. [版本发布模型](http://www.wangyaqi.cn/2015/05/18/git/){:target="_blank"}
-1. [API文档](http://eastapi.swao.cn/swagger-ui.html){:target="_blank"}
+1. [版本发布模型](/2015/05/18/git/){:target="_blank"}
+1. [API文档swagger](http://eastapi.swao.cn/swagger-ui.html){:target="_blank"}
 1. 可配置的运营系统：[运营系统](http://eastboss.swao.cn/pageui/search.html){:target="_blank"}(lyx/123456)，[客户使用的系统](http://eastp.swao.cn/){:target="_blank"}（18321035379/123456)
 1. [maven仓库](http://mvn.swao.cn/nexus/){:target="_blank"}
 
@@ -39,7 +40,6 @@ tags:
 
 # 资料书籍
 ## 方案
-1. [解决方案集合](https://andrewwang79.gitbooks.io/solution/){:target="_blank"}
 1. [Java开发](https://andrewwang79.gitbooks.io/javadev/){:target="_blank"}
 1. [前端](https://ccc3.gitbooks.io/fe_in_action/){:target="_blank"}
 1. [运维](https://andrewwang79.gitbooks.io/ops/){:target="_blank"}
@@ -54,4 +54,6 @@ tags:
 1. 自动化通用抓爬
 
 # 推荐
+[开发人员的知识](/2017/01/16/dev/)
+[解决问题](/2017/03/12/toubleshooting/)
 [精益阅读](http://sj.qq.com/myapp/detail.htm?apkName=com.qiya.daydayup){:target="_blank"}
