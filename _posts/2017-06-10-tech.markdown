@@ -54,6 +54,6 @@ tags:
 1. 自动化通用抓爬
 
 # 推荐
-[开发人员的知识](/2017/01/16/dev/)
-[解决问题](/2017/03/12/toubleshooting/)
-[精益阅读](http://sj.qq.com/myapp/detail.htm?apkName=com.qiya.daydayup){:target="_blank"}
+* [开发人员的知识](/2017/01/16/dev/)
+* [解决问题](/2017/03/12/toubleshooting/)
+* [精益阅读](http://sj.qq.com/myapp/detail.htm?apkName=com.qiya.daydayup){:target="_blank"}
