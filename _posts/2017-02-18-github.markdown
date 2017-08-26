@@ -18,6 +18,7 @@ tags:
 ## 个人网站
 - [Jekyll和Github搭建个人静态博客](http://pwnny.cn/original/2016/06/26/MakeBlog.html)
 - [使用 github + jekyll 搭建个人博客](http://www.cnblogs.com/wangfupeng1988/p/5702324.html)
+- 新开页面链接写法：```[标题](链接){:target="_blank"}```
 
 ## 多人协作
 通过clone来多人编辑gitbook
@@ -49,6 +50,8 @@ tags:
 - 运行(监听和运行端口是可选项)：gitbook serve --lrport 35729 --port 4000
 - 自动生成所有目录和文件：gitbook init
 - 安装插件：gitbook install
+
+## 编写
 
 ## 资料
 - [Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
