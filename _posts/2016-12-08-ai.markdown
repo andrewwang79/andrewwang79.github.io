@@ -4,6 +4,7 @@ title:  "人工智能"
 date:   2016-12-08
 catalog: true
 tags:
+    - 技术
     - AI
     - 数据
 ---
