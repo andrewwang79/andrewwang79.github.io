@@ -25,7 +25,7 @@ tags:
 1. 当前版本的feature无需另开分支，直接在dev开发。长期feature需开分支。
 
 # 环境清单
-每个环境都有一套：执行程序，数据库，配置
+1. 每个环境都有一套：执行程序，数据库，配置
 
 | 环境 | 对应分支 | 执行程序 | 数据库 | 设置 | 说明 |
 | :----: | ---- | ---- |
@@ -84,18 +84,21 @@ tags:
   * 在主分支上选择该功能对应的所有提交，创建成一个补丁，在发布分支上应用本补丁
 
 ## 命令脚本
-- **指定在特定目录执行git：git -C <目录>**
-- 显示当前分支：git branch
-- 新建分支：git branch <远程分支>
-- 切换分支：git checkout <远程分支>，git checkout master
-- 拉取当前分支：git pull
-- 拉取分支：git pull <远程主机> <远程分支>:<本地分支>，git pull origin master:master。
-- 合并分支(远程分支合并到当前分支)：git merge <远程分支>
-- 删除分支：git branch -d <远程分支>
-- 基于当前分支创建新分支：git branch <本地新分支>
-- 显示分支的提交记录：git show-branch
-- 显示所有分支：git branch -va
-- 重置当前分支到最新提交：cd <目录> | git reset --hard HEAD^
+1. **指定在特定目录执行git：git -C <目录>**
+1. 显示当前分支：git branch
+1. 新建分支：git branch <远程分支>
+1. 切换分支：git checkout <远程分支>，git checkout master
+1. 拉取当前分支：git pull
+1. 拉取分支：git pull <远程主机> <远程分支>:<本地分支>，git pull origin master:master。
+1. 合并分支(远程分支合并到当前分支)：git merge <远程分支>
+1. 删除分支：git branch -d <远程分支>
+1. 基于当前分支创建新分支：git branch <本地新分支>
+1. 显示分支的提交记录：git show-branch
+1. 显示所有分支：git branch -va
+1. 永久删除远程分支上的提交。非常规操作，不建议使用
+  1. cd <目录>
+  1. git reset --hard HEAD^ // 删除最近的一次提交，删除n次提交就执行n次
+  1. git push origin master -f // 提交到远程
 
 # 资料
 1. **[git push & git pull 推送/拉取分支](http://blog.csdn.net/litianze99/article/details/52452521)**
