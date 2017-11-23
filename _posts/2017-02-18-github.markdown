@@ -47,11 +47,40 @@ tags:
 1. 编写SUMMARY.md，通过“gitbook init”自动生成所有目录和文件
 
 ## 命令
-- 运行(监听和运行端口是可选项)：gitbook serve --lrport 35729 --port 4000
-- 自动生成所有目录和文件：gitbook init
-- 安装插件：gitbook install
+- 运行(会同时执行编译，监听和运行端口是可选项)：gitbook serve --lrport 35729 --port 4000
+- 自动创建所有目录和文件：gitbook init
+- 自动安装插件：gitbook install
+- 编译：gitbook build
 
-## 编写
+## 在服务器(centos)部署使用
+### [安装gitbook](http://www.jianshu.com/p/4ddfe52a27e4)
+```
+// 需要git，nodejs，npm，gitbook
+yum -y install git
+yum -y install nodejs
+yum -y install npm
+npm install -g gitbook
+npm install -g gitbook-cli
+gitbook -V
+```
+
+### 部署
+* 每个book是1个网站
+* 初始化脚本
+```
+git clone ${git_path} ${path}
+cd ${path}
+gitbook install
+gitbook build
+```
+* 启动脚本
+```
+git -C ${path} checkout master // git下载代码
+cd ${path}
+gitbook install
+lsof -i :4000 | awk '{print $2}' | xargs kill -9
+nohup gitbook serve –lrport 35729 –port 4000 >/dev/null &
+```
 
 ## 资料
 - [Gitbook简易教程](https://segmentfault.com/a/1190000005859901)
