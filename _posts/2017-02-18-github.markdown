@@ -76,10 +76,11 @@ gitbook build
 * 启动脚本
 ```
 git -C ${path} checkout master // git下载代码
+git -C ${path} pull
 cd ${path}
 gitbook install
 lsof -i :4000 | awk '{print $2}' | xargs kill -9
-nohup gitbook serve –lrport 35729 –port 4000 >/dev/null &
+nohup gitbook serve --lrport 35729 --port 4000 >/dev/null &
 ```
 
 ## 资料
