@@ -96,9 +96,11 @@ tags:
 1. 显示分支的提交记录：git show-branch
 1. 显示所有分支：git branch -va
 1. 永久删除远程分支上的提交。非常规操作，不建议使用
-  1. cd <目录>
-  1. git reset --hard HEAD^ // 删除最近的一次提交，删除n次提交就执行n次
-  1. git push origin master -f // 提交到远程
+```
+  cd <目录>
+  git reset --hard HEAD^ // 删除最近的一次提交，删除n次提交就执行n次
+  git push origin master -f // 提交到远程
+```
 
 # 资料
 1. **[git push & git pull 推送/拉取分支](http://blog.csdn.net/litianze99/article/details/52452521)**
