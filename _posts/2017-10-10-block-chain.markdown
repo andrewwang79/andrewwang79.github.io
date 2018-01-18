@@ -7,12 +7,19 @@ tags:
     - 技术
 ---
 
+# 定义
+* 区块链技术是指通过去中心化和去信任的方式集体维护一个可靠数据库的技术
+* 4个关键词：去中心化（Decentralized）、去信任（Trustless）、集体维护（Collectively maintain）、可靠数据库（Reliable Database）。
+
 # 说明
 * 本质是去中心化(去中介)，原理是一串使用密码学相关联所产生的数据块。
 * 如比特币的每一个数据块中包含了多次比特币网络交易有效确认的信息。
 
-* 区块链技术是指通过去中心化和去信任的方式集体维护一个可靠数据库的技术
-可以用4个关键词去形容：去中心化（Decentralized）、去信任（Trustless）、集体维护（Collectively maintain）、可靠数据库（Reliable Database）。
+# 应用场景
+1. 数字资产（数字货币）、数字货币交易平台
+1. 智能合约、数字票据、权益证明
+1. 征信
+1. 政务服务
 
 # 参考
 * [区块链是什么鬼？一文看懂区块链挖矿&记账原理](https://wenku.baidu.com/view/bc1edcc7f9c75fbfc77da26925c52cc58bd6907d.html)
