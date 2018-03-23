@@ -86,11 +86,14 @@ tags:
 
 ### pull时冲突处理
 #### 无commit
-1. 暂存处理
-  1. stash暂存改动
-  1. pull最新的版本
-  1. stash pop，手动解决冲突
-1. commit，继续“有commit”的方法
+##### 暂存处理
+1. stash暂存改动
+1. pull最新的版本
+1. stash pop，手动解决冲突
+
+##### 冲突处理
+1. commit
+1. “有commit”的流程
 
 #### 有commit
 1. pull，手工解决冲突
