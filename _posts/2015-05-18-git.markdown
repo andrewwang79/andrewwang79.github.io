@@ -112,6 +112,7 @@ tags:
 1. 基于当前分支创建新分支：git branch <本地新分支>
 1. 显示分支的提交记录：git show-branch
 1. 显示所有分支：git branch -va
+1. 查询当前分支的版本号(commit id)：git rev-parse HEAD
 1. 清除当前目录下所有没add管理文件的修改：git checkout .
 1. 清除当前目录下所有非管理文件：git -C path clean -xdf
 1. 永久删除远程分支上的提交。非常规操作，不建议使用
