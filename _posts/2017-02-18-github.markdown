@@ -68,7 +68,8 @@ gitbook -V
 yum -y install git
 yum -y install nodejs
 yum -y install npm
-npm install -g gitbook
+npm config set registry https://registry.npm.taobao.org // 推荐使用国内npm镜像
+// npm install -g gitbook // 新版本貌似不用安装了
 npm install -g gitbook-cli
 gitbook -V
 ```
