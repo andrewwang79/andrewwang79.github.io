@@ -52,8 +52,17 @@ tags:
 - 自动安装插件：gitbook install
 - 编译：gitbook build
 
-## 在服务器(centos)部署使用
-### [安装gitbook](http://www.jianshu.com/p/4ddfe52a27e4)
+## 安装
+## windows/Mac
+* [参考](https://www.cnblogs.com/Lam7/p/6109872.html)
+```
+[下载](https://nodejs.org/en/)
+npm install gitbook-cli -g
+gitbook -V
+```
+
+## 服务器(centos)
+* [安装gitbook](http://www.jianshu.com/p/4ddfe52a27e4)
 ```
 // 需要git，nodejs，npm，gitbook
 yum -y install git
@@ -64,7 +73,7 @@ npm install -g gitbook-cli
 gitbook -V
 ```
 
-### 部署
+## 部署使用
 * 每个book是1个网站
 * 初始化脚本
 ```
