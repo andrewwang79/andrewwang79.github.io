@@ -75,21 +75,25 @@ gitbook -V
 
 ## 部署使用
 * 每个book是1个网站
-* 初始化脚本
+
+### 初始化
+1. 编写book.json
+1. 脚本
 ```
 git clone ${git_path} ${path}
 cd ${path}
 gitbook install
 gitbook build
 ```
-* 启动脚本
+1. 启动脚本
 ```
 git -C ${path} checkout master // git下载代码
 git -C ${path} pull
 cd ${path}
-gitbook install
 lsof -i :4000 | awk '{print $2}' | xargs kill -9
-nohup gitbook serve --lrport 35729 --port 4000 >/dev/null &
+gitbook install
+gitbook serve --lrport 35729 --port 4000 // 非服务器使用
+nohup gitbook serve --lrport 35729 --port 4000 >/dev/null & // 服务器使用
 ```
 
 ## 资料
