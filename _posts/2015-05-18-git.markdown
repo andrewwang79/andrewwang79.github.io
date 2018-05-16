@@ -9,7 +9,8 @@ tags:
 ---
 
 # 版本模型
-资料：[分支模型](http://blog.csdn.net/qq_34651940/article/details/51891767)，[英文原版](http://nvie.com/posts/a-successful-git-branching-model/)
+* 原则：新分支只能合并到来源分支(不能在新分支之间做合并)，来源分支可以将部分改进合并到新分支
+* 资料：[分支模型](http://blog.csdn.net/qq_34651940/article/details/51891767)，[英文原版](http://nvie.com/posts/a-successful-git-branching-model/)
 ![](http://img.blog.csdn.net/20160716144249144?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
 |分支类型 | 名称 | 永久 | 命名规范 | 来源 | 操作 | 合并到 | 角色 |
@@ -91,7 +92,7 @@ tags:
   * hard：丢弃提交内容
 
 ### pull时冲突处理
-#### 无commit
+#### 无commit(2种方法，推荐暂存)
 ##### 暂存处理
 1. stash暂存改动
 1. pull最新的版本
@@ -105,6 +106,11 @@ tags:
 1. pull，手工解决冲突
 1. commit(解决冲突)merge版本
 1. push
+
+#### 冲突各方说明
+| 方式 | 我的 | 他人 |
+| :----: | ---- | ---- |
+| 暂存 | 本地文件 | 暂存 |
 
 ### 仓库迁移
 https://www.jianshu.com/p/39d2263c69b1
