@@ -112,10 +112,31 @@ tags:
 | 方式 | 我的 | 他人 |
 | :----: | ---- | ---- |
 | 暂存 | 本地文件 | 暂存 |
-| 分支合并 | dest分支 | src分支 |
+| 分支合并 | 目标分支(LOCAL) | 源分支(REMOTE, 被合并的) |
+
+#### 代码合并
+* [Git – Fast Forward 和 no fast foward](https://my.oschina.net/yuzn/blog/82297)
+* BASE是双方的父亲
+* [冲突文件说明](https://blog.csdn.net/zhangbinsijifeng/article/details/49332615)
+```
+<<<<<<< HEAD
+我的
+=======
+他人
+>>>>>>>6853e5ff961e684d3a6c02d4d06183b5ff330dcc
+```
 
 ### 仓库迁移
-https://www.jianshu.com/p/39d2263c69b1
+* https://www.jianshu.com/p/39d2263c69b1
+
+### 重置目录
+* git -C src fetch && git -C src reset --hard && git -C src checkout B1 && git -C src pull
+* src是git目录路径，B1是分支或者标签。如是标签pull会失败，可忽略
+
+### 信息获取
+* git -C $3 symbolic-ref --short -q HEAD // 分支
+* git -C $3 describe --always --tag // 标签
+* git -C $3 rev-parse --short HEAD // 提交
 
 ## 命令脚本
 ### branch
