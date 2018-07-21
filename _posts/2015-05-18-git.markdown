@@ -145,8 +145,9 @@ tags:
 1. 显示分支的提交记录：git show-branch
 1. 显示当前分支的版本号(commit id)：git rev-parse HEAD
 1. 切换分支/标签
-  1. 切换本地分支：git checkout 分支/tag/commit，git checkout branch1, git checkout tag1, git checkout commit
+  1. 切换本地分支：git checkout 分支/tag/commit，git checkout branch1, git checkout tag1, git checkout commit1
   1. 下载远程分支并切换：git checkout -b <本地分支> origin/<远程分支>，git checkout -b lb origin/rb
+  1. 下载远程标签并切换：git checkout -b <本地分支> origin/tag1
 1. 基于当前分支创建新分支：git branch <本地新分支>
 1. 删除分支：git branch -d <远程分支>
 
