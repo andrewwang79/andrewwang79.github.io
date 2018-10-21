@@ -109,10 +109,11 @@ tags:
 
 #### 冲突各方说明
 
-| 方式 | 我的 | 他人 |
+| 方式 | 我的(LOCAL) | 他人(REMOTE) |
 | :----: | ---- | ---- |
 | 暂存 | 本地文件 | 暂存 |
 | 分支合并 | 目标分支(LOCAL) | 源分支(REMOTE, 被合并的) |
+| 补丁 | 本地文件 | 补丁 |
 
 #### 代码合并
 * [Git – Fast Forward 和 no fast foward](https://my.oschina.net/yuzn/blog/82297)
