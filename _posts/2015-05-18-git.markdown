@@ -170,7 +170,7 @@ tags:
 ```
   cd <目录>
   git reset --hard HEAD^ // 删除最近的一次提交，删除n次提交就执行n次
-  git push origin master -f // 提交到远程
+  git push origin master -f // 提交到远程, origin是远程名称，master是分支名称
 ```
 
 # 资料
