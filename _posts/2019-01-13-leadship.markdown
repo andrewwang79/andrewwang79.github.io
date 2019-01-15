@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "团队领导力"
+date:   2019-01-13
+catalog: true
+tags:
+    - 管理
+---
+
+## 管理4个层级
+1. O：officer
+1. D：director
+1. M：manager
+1. E：empoloyee
+
+## 力量
+1. 职权力
+1. 领导力
+
+## 领导力
+### 整体
+1. 统一价值观
+1. 制定规则
+1. 长效&有效的影响他人的能力和意愿，提升信心和动力，获得好的态度和行为
+1. 驱动他人自我发现个人/团队价值
+
+### 考核
+1. 确保所有人都清楚团队目标(what)，同时要清楚目标背后的意义(why)
+1. 一起制订目标和KPI(每季度)
+
+### 其他
+1. 会议上眼神让人先发言
+1. 会议上各自用记事贴写出来。可以让大家思考并参与，有群体效应
+1. 沟通3步：说观点，摆数据，一起推理
+
+
+## 方法论
+* [DISC测评](https://baike.baidu.com/item/DISC%E6%B5%8B%E8%AF%84)
+* [MECE分析法](https://baike.baidu.com/item/MECE)
+* [5why分析法](https://baike.baidu.com/item/5why%E5%88%86%E6%9E%90%E6%B3%95)：生产，检查，体系。
+* [一张图看懂5why分析法](https://zhuanlan.zhihu.com/p/28506456)
