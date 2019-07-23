@@ -167,6 +167,7 @@ tags:
 1. 清除当前目录所有commit冲突的文件，不会回退：git reset hard
 1. 清除当前目录下所有没commit的管理文件的修改：git checkout .
 1. 清除当前目录下所有非管理文件：git -C . clean -xdf
+1. [撤销合并](http://blog.psjay.com/posts/git-revert-merge-commit/)，需指定parent：git revert -m 1 <提交号(7位)>   m参数的值可以是1或2，对应parent在merge commit信息中的顺序，1是合并目标，2是合并来源
 1. 永久删除远程分支上的提交。非常规操作，不建议使用
 ```
   cd <目录>
