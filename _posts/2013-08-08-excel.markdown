@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "excel"
+date:   2013-08-08
+catalog: true
+tags:
+    - 技术
+---
+
+# 使用
+* =VLOOKUP(A1, 'sheetX'!$A$1:$B$10000, 2, False) // 按照A1去精确匹配range('sheetX'!$A$1:$B$10000)的第1列(默认，无法配置)，显示range的第2列
+
+# 资料
+## 透视图表
+* https://www.zhihu.com/question/22484899
+* https://www.jianshu.com/p/23c8984f7cc7
+* ../file/公式.xlsx
