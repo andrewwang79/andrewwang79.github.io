@@ -140,10 +140,15 @@ tags:
 * git -C $3 rev-parse --short HEAD // 提交
 
 ### 变基(rebase)
-* merge和rebase这两种整合方法的最终结果没有任何区别，但是变基使得提交历史更加整洁。 你在查看一个经过变基的分支的历史记录时会发现，尽管实际的开发工作是并行的，但它们看上去就像是串行的一样，提交历史是一条直线没有分叉。
-* 目的是为了确保在向远程分支推送时能保持提交历史的整洁。例如向某个其他人维护的项目贡献代码时。在这种情况下，你首先在自己的分支里进行开发，当开发完成时你需要先将你的代码变基到 origin/master 上，然后再向主项目提交修改。 这样的话，该项目的维护者就不再需要进行整合工作，只需要快进合并便可。
+* merge和rebase的最终结果没有任何区别
 * https://xiaozhuanlan.com/topic/6873210549
 * https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA
+* https://blog.csdn.net/kuangdacaikuang/article/details/79619828
+
+| 方式 | 说明 | 优点 | 缺点 |
+| :----: | ---- | ---- | ---- |
+| merge | 合并时遇到冲突，修改后重新commit | 记录commit的实际情况，方便查看 | 无改动会快进合并，否则自动创建一个新的merge commit |
+| rebase | 将commit历史进行合并，并行变串行。本质是补丁模式 | 提交历史更加整洁 | 发生冲突时不容易定位问题，因为rewrite了history |
 
 ### 清除已删除的文件(其存在于历史提交中)
 [寻找并删除Git记录中的大文件](https://harttle.land/2016/03/22/purge-large-files-in-gitrepo.html)
@@ -167,6 +172,23 @@ git push origin --all -f
 显示所有配置：git config -l
 ```
 
+### 统计
+1. 统计工具：cloc, git_stats
+1. [统计脚本](https://blog.csdn.net/weixin_34277853/article/details/89700887)
+```
+echo "统计结果:" && git log --first-parent master --author="andrew" --after="2018-09-16 12:00:00" --before="2019-09-16 00:00:01" --pretty=tformat: --numstat | gawk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "增加行数:%s 删除行数:%s 变化总行数:%s\n",add,subs,loc }'
+echo "详情如下:" && git log --first-parent master --author="andrew" --word-diff --since="2019-05-16 00:00:01" --until="2019-09-16 12:00:00" -p --stat
+```
+
+### 同一台电脑上的仓库目录用不同账号提交
+1. 相同或不同仓库都可以
+1. 操作如下，核心是设置仓库实例的git账号信息
+```
+cd 仓库目录
+git config --local user.name NAME
+git config --local user.email EMAIL@email.com
+```
+
 ## 命令脚本
 ### branch
 1. 显示当前分支：git branch
@@ -177,11 +199,21 @@ git push origin --all -f
   1. 切换本地分支：git checkout 分支/tag/commit，git checkout branch1, git checkout tag1, git checkout commit1
   1. 下载远程分支并切换：git checkout -b <本地分支> origin/<远程分支>，git checkout -b lb origin/rb
   1. 下载远程标签并切换：git checkout -b <本地分支> origin/tag1
-1. 基于当前分支创建新分支：git branch <本地新分支>
+1. 基于当前分支创建新分支/切换分支：git branch <分支>
 1. 删除分支：git branch -d <远程分支>
 
+### commit
+1. 添加所有的文件，包括删除的：git add -A .
+1. 查看所有的commit提交记录：git log
+1. 查看所有的commit提交记录(含文件清单)：git log --name-status
+1. 查看最新的commit：git show
+1. 查看指定commit hashID的所有修改：git show commitId
+1. 查看某次commit中具体某个文件的修改：git show commitId fileName
+
 ### 其他
+1. git add . && git commit -m "msg" && git push // 快速提交
 1. git blame file_path // 显示文件内容的具体修改情况
+1. git cat-file -p commitid // 显示提交号的具体内容
 1. git show commitid // 显示提交号的具体内容
 1. "git clone --depth 1 <url> <目录>" // 下载最后一次commit，加快速度
 1. **指定在特定目录执行git：git -C <目录> 执行命令**
@@ -190,6 +222,7 @@ git push origin --all -f
 1. 合并分支(远程分支合并到当前分支)：git merge <远程分支>
 1. 查看提交信息：git show <提交号(7位)>
 1. 清除当前目录所有commit冲突的文件，不会回退：git reset hard
+1. git reset .
 1. 清除当前目录下所有没commit的管理文件的修改：git checkout .
 1. 清除当前目录下所有非管理文件：git -C . clean -xdf
 1. [撤销合并](http://blog.psjay.com/posts/git-revert-merge-commit/)，需指定parent：git revert -m 1 <提交号(7位)>   m参数的值可以是1或2，对应parent在merge commit信息中的顺序，1是合并目标，2是合并来源
@@ -206,6 +239,7 @@ git push origin --all -f
 1. 忽略SSL证书：git config --global http.emptyAuth true
 
 # 资料
+## 参考
 1. [Learn Git Branching](https://learngitbranching.js.org/)，很好的示范
 1. **[git push & git pull 推送/拉取分支](http://blog.csdn.net/litianze99/article/details/52452521)**
 1. **[Git - 分支的新建与合并](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)**
@@ -213,9 +247,15 @@ git push origin --all -f
 1. [git – 简易指南](http://www.bootcss.com/p/git-guide/)
 1. [强制删除远程分支上的某次提交](http://blog.csdn.net/qqxiaoqiang1573/article/details/68074847)
 1. [Git下的冲突解决](http://www.cnblogs.com/sinojelly/archive/2011/08/07/2130172.html)
-1. 统计工具：cloc, git_stats
-1. [统计脚本](https://blog.csdn.net/weixin_34277853/article/details/89700887)
-```
-echo "统计结果:" && git log --first-parent master --author="andrew" --after="2018-09-16 12:00:00" --before="2019-09-16 00:00:01" --pretty=tformat: --numstat | gawk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "增加行数:%s 删除行数:%s 变化总行数:%s\n",add,subs,loc }'
-echo "详情如下:" && git log --first-parent master --author="andrew" --word-diff --since="2019-05-16 00:00:01" --until="2019-09-16 12:00:00" -p --stat
-```
+1. [git多账号提交适配](https://www.jianshu.com/p/d696b5fef750)
+
+## 账号
+1. git账号：通过邮箱区分
+  1. author：作者，通过commit命令添加
+  1. committer：提交者，通过配置添加
+    1. 全局配置: /user/NAME/.gitconfig
+1. 服务商账号：服务商自定义，比如github账号密码
+
+## 提交
+1. github提交时不会检查服务商账号是否和git的committer一致，所以只要有github仓库权限就可以伪造成其他人的提交
+1. github仓库首次输入会记忆
