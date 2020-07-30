@@ -197,13 +197,15 @@ git config --local user.email EMAIL@email.com
 1. 显示当前分支的版本号(commit id)：git rev-parse HEAD
 1. 切换分支/标签
   1. 切换本地分支：git checkout 分支/tag/commit，git checkout branch1, git checkout tag1, git checkout commit1
-  1. 下载远程分支并切换：git checkout -b <本地分支> origin/<远程分支>，git checkout -b lb origin/rb
-  1. 下载远程标签并切换：git checkout -b <本地分支> origin/tag1
+  1. 下载远程分支并切换【下载前先git pull同步】：git checkout -b <本地分支> origin/<远程分支>，git checkout -b lb origin/rb
+  1. 下载远程标签并切换【下载前先git pull同步】：git checkout -b <本地分支> origin/<远程tag>
 1. 基于当前分支创建新分支/切换分支：git branch <分支>
 1. 删除分支：git branch -d <远程分支>
 
-### commit
-1. 添加所有的文件，包括删除的：git add -A .
+### commit[add命令](https://www.yiibai.com/git/git_add.html)
+1. git add -f . && git commit -m "msg" && git push // 快速提交
+1. git checkout -b abc && git push origin abc:abc // 本地创建分支并推送到远程同名分支
+1. 添加所有的文件，包括删除的[所有跟踪文件中被修改过或已删除文件,所有未跟踪的文件]：git add -A .
 1. 查看所有的commit提交记录：git log
 1. 查看所有的commit提交记录(含文件清单)：git log --name-status
 1. 查看最新的commit：git show
@@ -211,7 +213,8 @@ git config --local user.email EMAIL@email.com
 1. 查看某次commit中具体某个文件的修改：git show commitId fileName
 
 ### 其他
-1. git add . && git commit -m "msg" && git push // 快速提交
+---
+1. git status // 显示当前目录的文件情况
 1. git blame file_path // 显示文件内容的具体修改情况
 1. git cat-file -p commitid // 显示提交号的具体内容
 1. git show commitid // 显示提交号的具体内容
