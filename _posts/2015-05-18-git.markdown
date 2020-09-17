@@ -189,8 +189,17 @@ git config --local user.name NAME
 git config --local user.email EMAIL@email.com
 ```
 
+## 下载部分文件
+* 只能生效一次，再做需要重头操作
+* 支持多层目录
+```
+git init && git config core.sparseCheckout true && echo "design/" >> .git/info/sparse-checkout
+git remote add -f origin url && git pull origin master
+```
+
 ## 命令脚本
 ### branch
+1. git clone -b master --single-branch --depth=1 URL // 只克隆指定的版本，克隆深度是1
 1. 显示当前分支：git branch
 1. 显示所有分支，含远程分支：git branch -va
 1. 显示分支的提交记录：git show-branch
@@ -240,6 +249,11 @@ git config --local user.email EMAIL@email.com
   * git config --global credential.helper store // 记住账号密码
   * rm ~/.git-credentials // 取消账号密码记忆
 1. 忽略SSL证书：git config --global http.emptyAuth true
+
+# gitlfs
+1. gitlfs安装后默认git clone是下载lfs文件的
+1. 不下载lfs文件 配置: git config --global filter.lfs.smudge "git-lfs smudge --skip"
+1. 下载lfs文件 配置: git config --global filter.lfs.smudge "git-lfs smudge -- %f"
 
 # 资料
 ## 参考
